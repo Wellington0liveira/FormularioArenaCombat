@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário ArenaCombat</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="form-container">
+      <h1>Formulário ArenaCombat</h1>
+      <p>Bem-vindo ao formulário de inscrição da ArenaCombat! Aqui você poderá registrar suas informações pessoais e os detalhes do seu robô de combate, essenciais para sua participação na competição. Preencha os dados abaixo com atenção e boa sorte!</p>
+      <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="nomerobo">Nome do Robô:</label>
+        <input type="text" id="nomerobo" name="nomerobo" required>
+        <br><br>
+        <label for="categoria">Selecionar Categoria:</label>
+        <select id="categoria" name="categoria" required>
+          <option value="" disabled selected>Selecione uma categoria</option>
+          <option value="Fairyweight 0,150Kg">Fairyweight 0,150Kg</option>
+          <option value="Antweight 0,454Kg">Antweight 0,454Kg</option>
+          <option value="Beetleweight 1,360Kg">Beetleweight 1,360Kg</option>
+          <option value="Hobbyweight 5,443Kg">Hobbyweight 5,443Kg</option>
+          <option value="Featherweight 13,607Kg">Featherweight 13,607Kg</option>
+          <option value="Lightweight 27,215Kg">Lightweight 27,215Kg</option>
+          <option value="Middleweight 54,431Kg">Middleweight 54,431Kg</option>
+          <option value="Heavyweight 108,862Kg">Heavyweight 108,862Kg</option>
+          <option value="Superheavyweight 200Kg">Superheavyweight 200Kg</option>
+        </select>
+        <br><br>
+        <label for="descricaorobo">Descrição do Robô:</label>
+        <textarea id="descricaorobo" name="descricaorobo" rows="4" required></textarea>
+        <br><br>
+        <fieldset style="border: 1px solid #666; padding: 10px; border-radius: 5px; background: #222;">
+          <legend style="color: white; font-family: 'Orbitron', sans-serif;">Avaliação do Robô</legend>
+          <label for="velocidade" style="display: block; margin-top: 10px;">Velocidade (1 a 5):</label>
+          <select id="velocidade" name="velocidade" required>
+            <option value="" disabled selected>Selecione uma classificação</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label for="resistencia" style="display: block; margin-top: 10px;">Resistência (1 a 5):</label>
+          <select id="resistencia" name="resistencia" required>
+            <option value="" disabled selected>Selecione uma classificação</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label for="agilidade" style="display: block; margin-top: 10px;">Agilidade (1 a 5):</label>
+          <select id="agilidade" name="agilidade" required>
+            <option value="" disabled selected>Selecione uma classificação</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label for="precisao" style="display: block; margin-top: 10px;">Precisão (1 a 5):</label>
+          <select id="precisao" name="precisao" required>
+            <option value="" disabled selected>Selecione uma classificação</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label for="potencia" style="display: block; margin-top: 10px;">Potência (1 a 5):</label>
+          <select id="potencia" name="potencia" required>
+            <option value="" disabled selected>Selecione uma classificação</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label for="custo" style="display: block; margin-top: 10px;">Custo (1 a 5):</label>
+          <select id="custo" name="custo" required>
+            <option value="" disabled selected>Selecione uma classificação</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </fieldset>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
