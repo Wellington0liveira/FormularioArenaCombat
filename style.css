@@ -1,6 +1,7 @@
-
+/* fonte 'Orbitron */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
+/* definição de altura para html e body */
 html, body {
   margin: 0;
   padding: 0;
@@ -24,10 +25,12 @@ body::after {
   height: 60px;
 }
 
+/* Centraliza o título */
 h1 {
   text-align: center;
 }
 
+/* estiliza o conteiner do formulario com fundo semi transparente, bordaas arredondadas e sombra */
 .form-container {
   position: relative;
   z-index: 2;
@@ -104,6 +107,7 @@ form input[type="submit"] {
   text-align: center;
 }
 
+/* Define o efeito de hover para o botão de envio */
 input[type="submit"]:hover {
   background-color: #333;
 }
